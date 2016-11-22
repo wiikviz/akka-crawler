@@ -11,9 +11,9 @@ run
 sbt ~run
 ```
 
-set supported domain names
-==========================
-Only these domains will be used in the crawl
+set the allowed domain names
+============================
+Only URLs from these domains will be used to crawl
 ```
 curl -H "Content-Type: application/json" -X POST -d '["wikipedia.org", "en.wikipedia.org"]' http://localhost:9000/domains
 ```
@@ -23,7 +23,7 @@ run crawl
 ```
 curl -H "Content-Type: application/json" -X POST -d '"http://wikipedia.org"' http://localhost:9000/page
 
-or 
+OR 
 
 curl -H "Content-Type: text/plain" -X POST -d 'http://wikipedia.org' http://localhost:9000/page
 ```
