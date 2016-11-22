@@ -1,8 +1,8 @@
 configuration
 =============
 Edit application.conf file for set properties:
-* crawler.nrOfInstances - the number of concurrent instances
-* crawler.download_folder - еру downloads folder
+* crawler.nrOfInstances - the number of running parallel crawlers instance
+* crawler.download_folder - the downloads folder
 * crawler.retry_count - the number of failed attempts 
 
 run
